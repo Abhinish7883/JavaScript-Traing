@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execrise -4</title>
+</head>
+
+<style src="style.css"></style>
+</style>
+<style>
+    #task{
+    text-align: center;
+}
+
+#timeDate{
+    display: flex;   
+    margin-left: 440px;
+
+}
+.a
+{
+    margin-left: 400px;
+}
+
+.stopWatch{
+    
+    position: relative;
+    padding: 40px;   
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#btn-Container{
+    text-align: center;
+    margin: 50px;
+}
+
+.btn{
+    padding: 7px 25px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;    
+
+}
+
+#start{
+    background-color: green;
+}
+
+#stop{
+    background-color: red;
+}
+
+#resume{
+    background-color: yellow;
+}
+
+#reset{
+    background-color: rgb(138, 167, 79);
+}
+</style>
+<body>
+    <h1 id="task">Task -1</h1>
+    <div class="container">
+        <div id="timeDate">
+
+            <h1 class="a">Time: <span id="time"></span></h1>
+            <h1 class="a">Date: <span id="date"></span></h1>
+        </div>
+
+        <div class="stopWatch">
+            <span id = "hour">00</span>
+            :<span id = "minute">00</span>
+            :<span id = "second">00</span>
+            :<span id = "count">00</span>
+
+        </div>
+
+        <div id ="btn-Container">
+
+            <button class="btn" id ="start" onclick="start()">Start</button>
+            <button class="btn" id ="stop" onclick="stop()">Stop</button>
+            <button class="btn" id ="resume" onclick="resume()">Resume</button>
+            <button class="btn" id ="reset" onclick="reset()">Reset</button>
+          </div>
+
+    </div>
+
+
+   <script src="script.js"></script> 
+</body>
+</html>

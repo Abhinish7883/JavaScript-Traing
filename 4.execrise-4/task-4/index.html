@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Task-4</title>
+
+</head>
+<body>
+    <div id="inputField" class="m-5">
+        <!-- <form > -->
+        <input class="text_box" id = "firstName" type="text" placeholder="Enter First Name" required>
+        <input class= "text_box" id = "lastName" type="text" placeholder="Enter Second Name"required>
+        <button value="add" id="Add-btn" class="btn btn-primary">Add</button>
+    </div>
+
+    <div id="select-item"class="justify-content-cente mx-auto">
+
+        <input type="checkbox" id="select-All" name="" onclick="selectAll()"value="select-All">
+        <label for="select-All" >Select All</label>
+        <label>
+            Total 
+            <span onclick="countvalue()" id="count">
+                0
+            </span> Selected Item</label>
+        <button type = "button" onclick="deleteAll()" class="btn btn-danger">Delete</button>
+
+    </div>
+
+    <div class="#" id="addItemTable">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
