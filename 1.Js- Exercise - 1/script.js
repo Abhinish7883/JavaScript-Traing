@@ -1,7 +1,7 @@
+ //task - 1
 function p1()
 {
-    //task -1
-
+   
     let line = 5;
     let pattern = ""
     for(let i=1;i<=line;i++)
@@ -21,12 +21,15 @@ function p1()
     }
     
     console.log(pattern);
+    alert(pattern);
 }
+
+// task - 2 
 
 function p2() {
 
     let line=4;
-    let pettern = "";
+    let pattern = "";
 
 for(let row=0; row<line;row++)
 {
@@ -34,29 +37,29 @@ for(let row=0; row<line;row++)
     {
         if(row==0||row==line-1||col==0||col==line-1)
         {
-            pettern+="*";
+            pattern+="*";
         }
         else
         {
-            pettern+="&ensp;";
+            pattern+=" ";
         }
     
     }
-    pettern+="<br>";
+    pattern+="\n";
 }
 
-document.write(pettern);
+console.log(pattern);
+alert(pattern);
        
 }
 
-function p3(){
-    // task - 3
+// task - 3  
 
-    
+function p3(){ 
     let line = 5 ;
     let pattern = "";
     let half = Math.floor(line/2)
-    // console.log(half)
+
     for(let i=1;i<=line;i++)
     {
         for(let j=1;j<=line;j++)
@@ -74,15 +77,15 @@ function p3(){
     }
     
     console.log(pattern);
+    alert(pattern);
 }
 
-function p4(){
-    //task - 4
+//task - 4
 
-    let line = 5 ;
+function p4(){
+let line = 5 ;
 let pattern = "";
 let half = Math.floor(line/2)
-// console.log(half)
 for(let i=1;i<=line;i++)
 {
     for(let j=1;j<=line;j++)
@@ -93,24 +96,22 @@ for(let i=1;i<=line;i++)
         }
         else
         {
-            pattern+=("2");
+            pattern+=(" ");
         }
     }
     pattern+="\n"
 }
 
 console.log(pattern);
-    
+alert(pattern);    
 }
 
+// task - 5
+
 function p5()
-{
-    // task - 5
-    
+{    
 let line = 9 ;
 let pattern = "";
-// let half = Math.floor(line/2)+1
-// console.log(half)
 for(let i=1;i<=line;i++)
 {
 
@@ -152,6 +153,7 @@ for(let i=1;i<=line;i++)
 }
 
 console.log(pattern);
+alert(pattern);
 }
 
 
